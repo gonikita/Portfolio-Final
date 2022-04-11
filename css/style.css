@@ -1,0 +1,610 @@
+/*Add padding and margin to space out the page.
+Make the font larger too.*/
+body{
+    font-family: 'Lato', sans-serif;
+	margin: 1%;
+	padding:1%;
+	font-size: 100%;
+  	background-color: #f1f1f1;
+  	background-image: url("../images/background.jpg");
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 30px; 
+	font-weight: bold;
+    padding: 10px;
+}
+
+/*Make the h2 heading match h1*/
+h2{
+	font-size: 25px; 
+	font-weight: bold;
+    text-align: center;
+    background-color: lightpink;
+    padding: 10px;
+}
+
+h3{
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*Add borders around the main components and some
+space too*/
+main {
+	border: 3.5px solid navy;
+	margin: 25px 0;
+	padding: 30px;
+	background-color: lightyellow;
+}
+
+/*Style for header and footer */
+header, footer {
+	background-color: lightyellow;
+	border: 3.5px solid navy;
+	margin: 5px;
+	padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ol {
+	list-style: decimal;
+	padding: 5px;
+} 
+
+/*Style the images*/
+img{
+    height: 200px;
+    width: 75%;
+    /*border: 3px solid navy;
+    padding: 15px;
+	margin: 10px;*/
+    border-radius: 10px;
+}
+
+/*Hover style to images*/
+img:hover{
+	filter: brightness();
+	border: 5px solid salmon;
+    margin: 0px;
+}
+
+/*Style every other image*/
+#us li:nth-child(2n+1) img{
+	border: .1px solid aquamarine;
+	filter: opacity();
+}
+#world li:nth-child(2n+1) img{
+	border: .1px solid aquamarine;
+	filter: opacity();
+}
+
+.active {
+    text-transform: uppercase;
+	font-weight: bold;
+    background-color: navy;
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+    border: solid 3px #000000;
+}
+
+.active p{
+	text-decoration: none;;
+}
+
+/*Change the styling for all of the list 
+items in the nav section*/
+nav[aria-label="nav1"] {
+	background-color: lightpink;
+	padding:10px;
+    margin: 12px;
+	width: auto;
+	border:3px solid navy;
+	display: inline-block;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav[aria-label="nav1"] a{
+    border: solid 1.5px navy;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+nav[aria-label="nav2"] {
+    font-size: smaller;
+	padding:10px;
+	width:auto;
+	border:0px solid black;
+	width: 20%;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+}
+
+nav[aria-label="nav2"] a{
+    margin: 5px;
+    text-align: center;
+  }
+
+  /*Added this so the links stay the same color*/
+nav[aria-label="nav2"] a:visited, #introduction a:visited{
+    color: blue
+}
+
+#us1{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#us1 img{
+	border: 10px;
+    /*margin: 10px;*/
+    width: 300px;
+    /*width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#us1 li {
+    max-width: 400px; /*get rid of*/
+    border: 3px solid navy;
+	margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: lightpink;
+}
+
+#world1{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#world1 img{
+	border: 10px;
+    /*margin: 10px;
+    /*width: auto;*/
+    width: 300px; 
+    justify-self: center;
+}
+
+#world1 li {
+    max-width: 400px; /*get rid of*/
+    border: 3px solid navy;
+	margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: lightpink;
+}
+
+#us2{
+    margin: 0 auto;
+	display: grid;
+    grid-template-rows: auto;
+    grid-gap: .5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;*/
+}
+
+#us2 li img{
+    grid-column: 1/-1;
+    height: 200px;
+    width: 100%;
+}
+
+#us2 li{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+    border: 3px solid navy;
+	margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-items: center;
+    background-color: lightpink;
+}
+
+#world2{
+    margin: 0 auto;
+	display: grid;
+    grid-template-rows: auto;
+    grid-gap: .5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;*/
+}
+
+#world2 li img{
+    grid-column: 1/-1;
+    height: 200px;
+    width: 100%;
+}
+
+#world2 li{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-column: span 1;
+    border: 3px solid navy;
+	margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-items: center;
+    background-color: lightpink;
+}
+
+#contact{
+    background-color: lightpink;
+	padding:20px;
+	width:auto;
+	border:1px solid black;
+}
+
+#contact{
+    text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea, input[type=email] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+/* This container is needed to position the front and back side */
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-inner, .flip-card2:hover .flip-inner,
+.flip-card:focus-within .flip-inner, .flip-card2:focus-within .flip-inner,
+.flip-card:focus .flip-inner, .flip-card2:focus .flip-inner,
+.flip-card:active .flip-inner, .flip-card2:active .flip-inner {
+    transform: rotateY(180deg);
+}
+  
+  /* Position the front and back side */
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+  
+/* Style the front side (fallback if image is missing) */
+.flip-front {
+    /*background-color: rgb(255, 194, 203);*/
+    color: black;
+}
+  
+  /* Style the back side */
+.flip-back {
+    background-color: navy;
+    color: white;
+    transform: rotateY(180deg);
+    backface-visibility: inherit;
+    overflow: scroll;
+}
+
+.journey{
+    background-image: url(../images/travel1.jpg);
+    background-size: auto;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.journey h2, .about h2{
+    background-color: lightpink;
+}
+
+.journey p, .about p{
+    background-color: rgba(255, 255, 255, .8);
+    padding: 30px;
+    font-size: 18px;
+    overflow: scroll;
+}
+
+.about{
+    background-image: url(../images/mich.jpg);
+    background-size: contain;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skip {
+    display: inline-block;
+    border: solid;
+    padding: 5px;
+    margin: 5px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+    top: 0px;
+}
+
+a.skip{
+    background: white;
+    padding: 5px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    /* Requirement 3 code here*/
+    position: absolute;
+    left: -500px;
+    top: 0px;
+}
+
+#us ul, #world ul, #thoughts ol{
+    padding: 20px;
+    font-size: 20px;
+}
+
+#thoughts ol{
+    background-color: rgba(236, 224, 194, 0.902);  
+    padding: 20px;
+}
+
+#thoughts ol li{
+    color: black;
+    margin-left: 25px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#us ul li, #world ul li{
+    background: rgba(236, 224, 194, 0.902);
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+#us ul li h3, #world ul li h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+#img1 {
+    height: 150px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    animation-name: logomove;
+    animation-duration: 5s;
+}
+
+@keyframes logomove {
+    from {width: 75px; opacity: 0;}
+    to {width: 200px; opacity: 1;}
+  }
+
+@media screen and (prefers-reduced-motion: reduce){
+    #logo, i {
+        -webkit-animation: none;
+                animation: none;
+      }
+
+    a.skip {
+        -webkit-transition: initial; /* sets to default setting */
+        transition: initial; /* sets to default setting */
+    }
+
+    .flip-inner {
+        transition: transform none;
+    }
+
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+    
+    .journey, .about{
+        background-attachment: initial;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        height: 200px;
+        width: 300px;
+    }  
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+     }
+ 
+    body > header {
+         flex-direction: row;
+         top: 0;
+    }
+
+    a.skip:focus{
+        position:absolute;
+        left:0px;
+        top: 10px;
+    }
+
+    h2, #contact{
+        text-align: left;
+    }
+
+    p, .journey p, .about p, #thoughts ol li{
+        font-size: 25px;
+    } 
+
+    nav[aria-label="nav1"], nav[aria-label="nav2"] {
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    footer{
+        align-items: normal;
+    }
+
+    #us ul, #world ul{
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+  
+@media screen and (min-width: 1000px) {
+    #img1 {
+        height: 300px;
+        width: 500px;
+    }  
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    a.skip:focus{
+        top: 10px;
+    }
+
+    body > header {
+         flex-direction: row;
+         top: 0;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2, #contact{
+        text-align: left;
+        font-size: 25px;
+    }
+
+    p, .journey p, .about p, #thoughts ol li{
+        font-size: 20px;
+    } 
+
+    nav[aria-label="nav1"], nav[aria-label="nav2"] {
+        font-size: 20px;
+        justify-content: space-around;
+    }
+
+    footer{
+        align-items: normal;
+    }
+
+    #us ul, #world ul{
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+  

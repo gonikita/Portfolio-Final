@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHDR7JM53S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-RHDR7JM53S');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/56f7d800ae.js" crossorigin="anonymous"></script>
+
+    <title>About Me</title>
+  </head>
+  
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+      <img src="images/logo.png" alt="logo" id = "logo">
+      <nav aria-label="nav1">
+        <a class = "active" href="index.html">About Me</a>
+        <a href="location.html">Locations</a>
+        <a href="weather.html">Weather</a>
+        <a href="costs.html">Costs</a>
+      </nav>
+      <i class="fa-solid fa-plane fa-spin fa-4x"></i>
+    </header>
+    <main class= "container" id= "main">
+      <h1>Greetings</h1>
+      <div id="introduction" class= "introduction">
+        <h2>Welcome</h2>
+        <p>Hi, welcome to Travel Niki 101! This site is to help you get travel inspiration for the next time wanderlust hits you and you would like to go somewhere.</p>
+      </div>
+      <div id="journey" class="journey">
+        <h2>Where I Started -> Where I'm Going</h2>
+        <p>In terms of travel, I really have no idea where or when I started because I have an awful memory. I know I was incredibly fortunate to get to go many places with my family when I was younger and today as well. From the U.S. to Canada, to Europe, to India, and to Israel I have been lucky for all those journeys. I love to hike in nature amongst beautiful sights and I make sure to do something like that wherever I go. Next, I would love to go to Africa and go on a Safari to see the amazing wildlife. Later I want to go to New Zealand for an alpaca farm. </p>
+        <!--<div class = "background1">
+          <img src = "images/travel1.jpg" alt="individual watching plane takeoff from airport" width="auto"/>
+        </div>-->
+      </div>
+      <div id="about" class = "about">
+        <h2>About Me</h2>
+        <p>Hi, I am Niki. I am a junior at the University of Michigan studying business and information science. I am from Saginaw, MI and am currently residing in Ann Arbor for school. I love to bake and eat yummy desserts and am trying to love running (so I can burn off those cals). I like to be active and go on walks. I also enjoy playing sports, whether it’s a low stakes intramural game or a game of tennis with my friends. I am excited to see where life takes me next and am happy to share my journey :)</p>
+        <!--<div class= "background2">
+          <img src = "images/umich.jpg" alt="University of Michigan image of diverse student population" width="auto"/>
+        </div>-->
+      </div>
+      <br/>
+      <br/>
+      <div id="contact">
+          <form action="https://formspree.io/f/xzbovvdr" method="post">
+				  <h1>Contact Me!</h1>
+          <br/>
+          <label for="first name">Your first name:</label>  
+          <input type="text" name="firstname" id="firstname" required>
+          <br/>
+          <label for="last name">Your last name:</label>  
+          <input type="text" name="lastname" id="lastname" required>
+          <br/>
+          <label for="email">Your email:</label>  
+          <input type="email" name="email" id="email" required>
+          <br/>
+          <label for="message">Type your message here:</label>  
+          <textarea name="message" id="message" rows="2" cols="auto"></textarea>
+          <br/>
+          <br/>
+          <input type="Submit" value="Submit">
+          </form>
+      </div>
+    </main>
+    
+    <footer>
+      <p>
+        <i class="fa-solid fa-mountain-sun fa-fade"></i>
+        <i class="fa-solid fa-earth-americas fa-fade"></i>
+        <i class="fa-solid fa-map-pin fa-fade"></i>
+        <i class="fa-solid fa-suitcase-rolling fa-fade"></i>
+        <i class="fa-solid fa-route fa-fade"></i>
+        <br>
+        Travel Niki 101
+        <br>
+        Niki G. 2022
+      </p>
+    </footer>
+  </body>
+
+</html>
