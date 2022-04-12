@@ -5,7 +5,10 @@ body{
 	margin: 1%;
 	padding:1%;
 	font-size: 100%;
-  	background-color: #f1f1f1;
+    /* background: #70e1f5;  
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  
+    background: linear-gradient(to right, #ffd194, #70e1f5); */
+    background-color: #f1f1f1;
   	background-image: url("../images/background.jpg");
 }
 
@@ -85,7 +88,7 @@ img:hover{
 	filter: opacity();
 }
 
-.active {
+nav[aria-label="nav1"] > .active {
     text-transform: uppercase;
 	font-weight: bold;
     background-color: navy;
@@ -107,7 +110,6 @@ nav[aria-label="nav1"] {
     margin: 12px;
 	width: auto;
 	border:3px solid navy;
-	display: inline-block;
     font-size: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +122,9 @@ nav[aria-label="nav1"] a{
     padding: 5px;
     margin: 5px;
     text-align: center;
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
 }
 
 nav[aria-label="nav2"] {
@@ -131,23 +136,24 @@ nav[aria-label="nav2"] {
     font-size: 15px;
     margin-top: 0px;
     margin-bottom: 10px;
+    margin-left: 10;
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-	/*display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;*/
+    color: black;
 }
 
-nav[aria-label="nav2"] a{
+nav[aria-label="nav2"] li{
     margin: 5px;
-    text-align: center;
-  }
+    text-align: left;
+    border: solid 1.5px navy;
+    padding: 5px;
+    color: black;
+    background-color: lightblue;
+}
 
-  /*Added this so the links stay the same color*/
-nav[aria-label="nav2"] a:visited, #introduction a:visited{
+#introduction a:visited{
     color: blue
 }
 
@@ -273,6 +279,10 @@ nav[aria-label="nav2"] a:visited, #introduction a:visited{
     background-color: lightpink;
 }
 
+#us2 ul, #world2 ul {
+    padding: 0px;
+}
+
 #contact{
     background-color: lightpink;
 	padding:20px;
@@ -298,7 +308,7 @@ input[type=text], select, textarea, input[type=email] {
   
   /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: gray;
+    background-color: navy;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -430,7 +440,7 @@ a.skip{
     top: 0px;
 }
 
-#us ul, #world ul, #thoughts ol{
+#us1 ul, #world1 ul, #thoughts ol{
     padding: 20px;
     font-size: 20px;
 }
@@ -483,13 +493,13 @@ p{
 @keyframes logomove {
     from {width: 75px; opacity: 0;}
     to {width: 200px; opacity: 1;}
-  }
+}
 
 @media screen and (prefers-reduced-motion: reduce){
     #logo, i {
         -webkit-animation: none;
                 animation: none;
-      }
+    }
 
     a.skip {
         -webkit-transition: initial; /* sets to default setting */
@@ -607,4 +617,11 @@ p{
         font-size: 16px;
     }
 }
-  
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
