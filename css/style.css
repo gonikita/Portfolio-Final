@@ -663,9 +663,10 @@ iframe {
 }
 
 .switch {
-    align-self: flex-end;
-    margin: 0.9375rem;
+    align-self: auto;
+    padding-left: 20px;
 }
+
 .inner-switch {
     display: inline-block;
     cursor: pointer;

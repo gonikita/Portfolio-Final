@@ -10,6 +10,10 @@
     border: 3.5px solid white;
 }
 
+.dark .inner-switch {
+    border: 1px solid white;
+}
+
 .dark h2 {
     background-color: black;
 }
