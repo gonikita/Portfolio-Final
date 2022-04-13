@@ -662,12 +662,12 @@ iframe {
     border: 3.5px solid lightpink;
 }
 
-.switch {
+.mode {
     align-self: auto;
     padding-left: 20px;
 }
 
-.inner-switch {
+.switch{
     display: inline-block;
     cursor: pointer;
     border: 1px solid #555;
