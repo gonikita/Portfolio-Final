@@ -1,0 +1,89 @@
+.dark {
+    background-color: black;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+    background-image: none;
+}
+
+.dark header, .dark main, .dark footer {
+    background-color: rgb(80, 80, 80);
+    border: 3.5px solid white;
+}
+
+.dark h2 {
+    background-color: black;
+}
+
+.dark nav[aria-label="nav1"] {
+    background-color: black;
+    border: 3px solid white;
+}
+
+.dark nav[aria-label="nav1"] a {
+    border: solid 1.5px pink;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: black;
+    background-color: pink;
+}
+
+.dark nav[aria-label="nav1"] > .active {
+    text-transform: uppercase;
+	font-weight: bold;
+    background-color: lightblue;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+    border: solid 3px white;
+}
+
+.dark nav[aria-label="nav2"] li {
+    border: solid 1.5px black;
+    color: black;
+    background-color: pink;
+}
+
+.dark img {
+    filter: saturate(.5);
+}
+
+.dark .flip-back {
+    background-color: pink;
+    color: black;
+}
+
+.dark #us1 li, .dark #world1 li, .dark #us2 li, .dark #world2 li {
+    background-color: lightblue;
+    border: 3px solid lightpink;
+}
+
+.dark .journey p, .dark .about p {
+    background-color: lightgray;
+    color: black;
+}
+
+.dark #contact {
+    background-color: lightblue;
+}
+
+.dark #contact h1, .dark #contact label {
+    color: black
+}
+
+.dark input[type=submit] {
+    background-color: black;
+}
+
+.dark #introduction a:visited{
+    color: lightblue;
+}
+
+.dark #us ul li, .dark #world ul li {
+    background: lightblue;
+    color: black;
+}
+
+.dark iframe {
+    border: 3.5px solid lightblue;
+}
