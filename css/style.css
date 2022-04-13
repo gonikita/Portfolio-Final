@@ -242,7 +242,7 @@ nav[aria-label="nav2"] li{
     grid-column: span 1;
     border: 3px solid navy;
 	margin: 10px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     justify-items: center;
     background-color: lightpink;
@@ -273,7 +273,7 @@ nav[aria-label="nav2"] li{
     grid-column: span 1;
     border: 3px solid navy;
 	margin: 10px;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     justify-items: center;
     background-color: lightpink;
@@ -384,9 +384,18 @@ html{
     overflow: scroll;
 }
 
+.flip-back p, .flip-back h3{
+    padding: 0px;
+    font-size: 16px;
+}
+
+.flip-back-touch {
+    -webkit-overflow-scrolling: touch;
+}
+
 .journey{
     background-image: url(../images/travel1.jpg);
-    background-size: auto;
+    background-size: contain;
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -501,16 +510,17 @@ p{
                 animation: none;
     }
 
-    a.skip {
+    a.skip, .flip-inner {
         -webkit-transition: initial; /* sets to default setting */
         transition: initial; /* sets to default setting */
     }
 
     .flip-inner {
-        transition: transform none;
+        transition: none;
+        transform: none;
     }
 
-    html{
+    html, #mapmain{
         scroll-behavior: auto; /* Removes scroll animation */
     }
     
@@ -539,12 +549,17 @@ p{
 
     a.skip:focus{
         position:absolute;
-        left:0px;
+        left: 0px;
         top: 10px;
     }
 
     h2, #contact{
         text-align: left;
+    }
+
+    .flip-back p, .flip-back h3{
+        padding: 0px;
+        font-size: 18px;
     }
 
     p, .journey p, .about p, #thoughts ol li{
@@ -591,16 +606,28 @@ p{
     }
 
     h1{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     h2, #contact{
         text-align: left;
-        font-size: 25px;
+        font-size: 30px;
     }
 
-    p, .journey p, .about p, #thoughts ol li{
+    .flip-back h3{
+        font-size: 25px;
+        font-style: italic;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .flip-back p{
+        padding: 0px;
         font-size: 20px;
+    }
+
+    .journey p, .about p, #thoughts ol li{
+        font-size: 28px;
     } 
 
     nav[aria-label="nav1"], nav[aria-label="nav2"] {
@@ -618,10 +645,19 @@ p{
     }
 }
 
-/* Set the size of the div element that contains the map */
-#map {
+
+#mapmain {
     height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
+    position: relative;
+    overflow: scroll;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 90px;
 }
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 3.5px solid lightpink;
+  }
